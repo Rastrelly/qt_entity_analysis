@@ -59,10 +59,17 @@
     <LibraryPath>C:\CPPLIBS\freeglut-3.2.2\built\lib\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <IncludePath>C:\CPPLIBS\boost_1_77_0;C:\CPPLIBS\glm-0.9.9.8;C:\CPPLIBS\freeglut-3.2.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\CPPLIBS\freeglut-3.2.2\built\lib\MinSizeRel;C:\CPPLIBS\boost_1_77_0\stage\lib;C:\CPPLIBS\boost_1_77_0\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
       <AdditionalDependencies>freeglutd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">

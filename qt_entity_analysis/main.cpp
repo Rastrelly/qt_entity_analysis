@@ -1,11 +1,4 @@
-#include "qt_entity_analysis.h"
 #include "stdafx.h"
-#include <QtWidgets/QApplication>
-#include <GL/freeglut.h>
-#include <glm/glm/glm.hpp>
-#include <thread>
-#include <vector>
-#include <mutex>
 
 //mutex
 mutex m;
